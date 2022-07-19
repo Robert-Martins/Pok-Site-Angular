@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToastComponent } from './toast/toast.component';
-import { ButtonsModule } from './buttons/buttons.module';
 import { InputsModule } from './inputs/inputs.module';
 import { ModalsModule } from './modals/modals.module';
 import { HeaderComponent } from './header/header.component';
+import { ButtonsModule } from './buttons/buttons.module';
 
 
 
@@ -15,16 +15,16 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     CommonModule,
-    ButtonsModule,
     InputsModule,
     ModalsModule,
+    ButtonsModule
   ],
   exports: [
-    ButtonsModule,
     InputsModule,
     ModalsModule,
     ToastComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonsModule
   ]
 })
 export class ComponentsModule { }

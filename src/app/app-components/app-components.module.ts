@@ -4,6 +4,8 @@ import { WhosYourPokemonComponent } from './whos-your-pokemon/whos-your-pokemon.
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
+import { ComponentsModule } from '../shared/components/components.module';
+import { HeaderComponent } from '../shared/components/header/header.component';
 
 
 
@@ -15,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     BuildYourTeamComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ]
 })
 export class AppComponentsModule { }
